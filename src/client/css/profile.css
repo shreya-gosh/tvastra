@@ -1,0 +1,176 @@
+.hide{
+    display: none;
+}
+.profile-container{
+    margin: 1rem;
+    border: 1px solid #a7a1a191;
+}
+
+.profile{
+    margin: 0.5rem;
+}
+
+.profile-image{
+    width: 100%;
+    height: 22rem;
+}
+
+.profile-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile button{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    background-color: #021535e8;
+}
+
+.profile-name{
+    font-family: 'nexa-bold';
+    font-size: 1.5rem;
+    color: #0d4aa5;
+    position: relative;
+    text-align: left;
+    padding-left: 3.5rem;
+}
+
+.profile-name::before{
+    content: '';
+    border-bottom: 2px solid #0d7ac2;
+    display: inline-block;
+    width: 3.2rem;
+    margin-right: 0.2rem;
+    margin-left: -3.5rem;
+    position: absolute;
+    bottom:0.8rem;
+}
+
+.profile-bio p{
+    padding: 0 0.5rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+
+.profile-description ul{
+    margin: 1rem 0.5rem;
+}
+.description-heading{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
+    padding: 0.7rem 0;
+    color: #0d7ac2;
+    transition: 0.4s;
+}
+
+.description-heading h3{
+    margin:0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.description-heading i{
+    margin: auto 0;
+    margin-right: auto;
+}
+
+.description-heading i:last-child{
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0.2rem 0.3rem 0.1rem;
+    font-size: 0.8rem;
+    background-color: #dfedfe;
+}
+.description{
+    text-align: left;
+    padding: 1rem 0.5rem;
+    background-color: #b3d4fc6b;
+    
+}
+
+.description p{
+    letter-spacing: 0.01rem;
+    margin: 0;
+}
+
+@media only screen and (min-width:768px){
+    .profile-container{
+        padding: 1rem;
+        margin: 1rem 2rem;
+    }
+    .profile-grid{
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        grid-template-rows: 1fr;
+    }
+
+    .profile{
+        grid-column: 2/3;
+    }
+
+    .profile-features{
+        grid-row: 1/2;
+    }
+
+    .profile-image{
+        height: 16rem;
+    }
+    .profile-name{
+        font-size: 1.8rem;
+        margin: 1rem 0 2rem;
+        padding-left: 0.5rem;
+    }
+
+    .profile-name::before{
+        margin-left: -1.5rem;
+        width: 1rem;
+    }
+
+    .description-heading{
+        grid-template-columns: 6% 84% 10%;
+        padding: 1.5rem 0;
+    }
+
+    .description-heading h3{
+        font-size: 1.2rem;
+    }
+
+    .profile-bio p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        text-align: left;
+    }
+
+    button{
+        height: auto;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .profile-grid{
+        grid-template-columns: 6fr 2.5fr;
+        column-gap: 2rem;
+    }
+
+    .profile-container{
+        margin: 2rem 5rem;
+        padding: 2rem;
+    }
+    .profile-name::before {
+        margin-left: -2.5rem;
+        width: 2rem;
+    }
+
+    .profile-image{
+        height: 22rem;
+    }
+}
+

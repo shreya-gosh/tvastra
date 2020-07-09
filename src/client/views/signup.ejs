@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="display-flex">
+        <%- include header.ejs %>
+    
+        <div class="contact-form">
+            <h3>Sign Up</h3>
+            <hr>
+            <form method="POST" action="/signup">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Enter Name">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Enter email">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required placeholder="Enter password">
+                </div>
+                <div class="input-box">
+                    <input type="text" name="number" id="number" required placeholder="Enter number">
+                </div>
+                <div class="input-box">
+                    <select name="gender" id="gender">
+                        <option value="" disabled selected hidden>Select your Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="date" name="DOB" id="DOB" required placeholder="dd/mm/yyyy">
+                </div>
+                <div id="place">
+                    <div class="input-box">
+                        <input type="text" name="city" id="city" required placeholder="Enter City">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="state" id="state" required placeholder="Enter State">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <select name="country" id="country">
+                        <option value="" disabled selected hidden>Select your Country</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="doctor" id="doctor" value="yes">
+                    <label for="doctor">Are you a doctor?</label>
+                </div>
+                <div class="btn">
+                    <button type="submit">SIGN UP<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+            <div class="signup-option">Already registered? <a href="/login">Login</a></div>
+        </div>
+        <footer class="copyright">
+            <div class="footer-content">
+                All Rights Reserved &copy; tvastra 2018
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

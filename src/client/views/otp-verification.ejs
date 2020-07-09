@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="display-flex">
+        <%- include header.ejs %>
+   
+        <div class="contact-form">
+            <h3>OTP</h3>
+            <hr>
+            <form method="POST" action="/otp-validation">
+                <div class="input-box ">
+                    <input type="text" name="code" id="code" placeholder="Enter OTP" pattern="[0-9]{4}">
+                </div>
+                <div class="options" style="justify-content: center;">
+                    <a href="/otp-request"><div>Resend</div></a>
+                </div>
+                <div class="btn">
+                    <button type="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+        <footer class="copyright">
+            <div>
+                All Rights Reserved &copy; tvastra 2018
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

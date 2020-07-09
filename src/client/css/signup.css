@@ -1,0 +1,158 @@
+
+.display-flex{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #abcadd;
+}
+
+header{
+    background-color: white;
+}
+
+.contact-form{
+    width: 85%;
+    max-width: 45rem;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.contact-form form{
+    padding:1rem;
+}
+
+.contact-form h3{
+    padding: 2rem 0;
+    margin:0;
+    color: #0568aa;
+}
+
+hr{
+    color: #e6e4e4;
+    margin:0;
+}
+
+.input-box{
+    outline: 1px solid #e7e4e4;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+#place{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.2rem;
+}
+
+::placeholder{
+    color: #c4c2c2;
+}
+.input-box input, .input-box select{
+    font-family: 'nexa-bold';
+    color: #c4c2c2;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.06rem;
+    width: 100%;
+    border: none;
+}
+
+option{
+    font-size: 0.7rem;
+    letter-spacing: 0.06rem;
+}
+
+.mobile{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.mobile i{
+    font-size: 1.5rem;
+    margin: auto;
+    color: #aaa4a4;
+}
+
+.check{
+    margin: 1rem;
+}
+.contact-form button{
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.btn i{
+    color:white;
+    float:right;
+}
+.signup-option{
+    font-family: 'nexa-bold';
+    color: gray;
+    padding-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.signup-option a{
+    color: #0568aa;
+    text-decoration: underline;
+}
+
+.copyright{
+    font-family: 'nexa-bold';
+    font-size: 0.7rem;
+    color: #696666;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    height: 10rem;
+    border: none;
+    outline: none;
+    outline: 1px solid #e7e4e4;
+    margin-bottom: 1.5rem;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    .display-flex{
+        height: 62rem;
+    }
+    .contact-form{
+        margin: auto;
+        width:60%;
+    }
+
+    .contact-form h3{
+        padding: 2.5rem 0;
+    }
+
+    .contact-form form{
+        padding: 1.5rem;
+    }
+
+    .input-box{
+        margin-bottom: 0.7rem;
+    }
+
+    .input-box input, .input-box select{
+        padding: 0.8rem;
+    }
+
+    .contact-form button{
+        padding: 1rem 2rem;
+    }
+}

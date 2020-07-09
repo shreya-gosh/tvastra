@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet3.css">
+</head>
+<body>
+    <%- include header.ejs %>
+    <div class="hero-section-3">
+        <h1>Contact Us</h1>
+        <h3>Home/Contact Us</h3>
+    </div>
+    <div class="desktop-view-formatting">
+    <div class="map" id="map"></div>
+    <div class="grid">
+        <div class="address-details">
+            <div class="detail-container">
+                <div class="detail-unit">
+                    <div class="detail-icon"><i class="fas fa-home"></i></div>
+                    <div class="detail">
+                        <div class="primary-detail">Noida, India</div>
+                        <div class="secondary-detail">Sector 45</div>
+                    </div>
+                </div>
+                
+                <div class="detail-unit">
+                    <div class="detail-icon"><i class="fas fa-phone"></i></div>
+                    <div class="detail">
+                        <div class="primary-detail">00 (440) 9865 562</div>
+                        <div class="secondary-detail">Mon to Fri 9am to 6pm</div>
+                    </div>
+                </div>
+                <div class="detail-unit">
+                    <div class="detail-icon"><i class="fas fa-home"></i></div>
+                    <div class="detail">
+                        <div class="primary-detail">support@tvastra.com</div>
+                        <div class="secondary-detail">Send us your query anytime!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <div class="form-grid">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Enter email address">
+                </div>
+                <div class="input-box">
+                    <input type="text" name="subject" id="subject" placeholder="Enter subject">
+                </div>
+                <div class="input-box message">
+                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+</div>
+</div>
+    <%- include footer.ejs %>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvhZPaOBdz2gZHmtN2l0c3sN53J-WaXnQ&callback=myMap"></script>
+</body>
+</html>

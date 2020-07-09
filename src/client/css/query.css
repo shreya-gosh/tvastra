@@ -1,0 +1,69 @@
+
+.contact-form{
+    width: 90%;
+}
+
+.contact-form h3{
+    padding: 2.5rem 0;
+}
+.contact-form form{
+    padding-bottom: 3rem;
+}
+.input-box{
+    margin-bottom: 1.3rem;
+}
+
+.input-box input{
+    padding: 0.5rem 1rem;
+}
+
+.copyright{
+    margin-bottom: 2rem;
+    color: black;
+}
+@media only screen and (min-width: 768px){
+    .contact-form{
+        width: 65%;
+    }
+
+    .contact-form h3{
+        padding: 3rem 0;
+    }
+
+    .input-box input{
+        padding: 1rem;
+    }
+    textarea{
+        height: 13rem;
+        padding: 1rem;
+    }
+
+    .copyright{
+        margin-bottom: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .contact-form{
+        width: 73%;
+        max-width: none;
+    }
+
+    .contact-form form{
+        padding: 1.5rem 2.5rem 4.5rem 2.5rem;
+    }
+
+    .input-box{
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-form button{
+        padding: 1.5rem 2rem;
+        letter-spacing: 0.45rem;
+        font-size: 1.1rem;
+    }
+    .copyright{
+        margin-bottom: 3rem;
+    }
+}

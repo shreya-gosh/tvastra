@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="display-flex">
+    <%- include header.ejs %>
+    <div class="contact-form">
+        <h3>Book an Appointment</h3>
+        <hr>
+        <form>
+            <div class="fieldname">Select Appointment Date*</div>
+            <div class="input-box">
+                <input type="date" name="date" id="date" placeholder="dd/mm/yyyy">
+            </div>
+            <div class=fieldname>Time interval*</div>
+            <div class="grid">
+                <input type="radio" id="morning" name="interval" value="morning">
+                <label for="morning">Morning</label>
+            </div>
+            <div class="grid">
+                <input type="radio" id="afternoon" name="interval" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+            </div>
+            <div class="grid">
+                <input type="radio" id="evening" name="interval" value="evening">
+                <label for="evening">Evening</label>
+            </div>
+            
+            <div class="fieldname">Appointment Status/Urgency*</div>
+            <div class="grid">
+                <input type="radio" id="routine" name="status" value="routine">
+                <label for="routine">Routine Check-up</label>
+            </div>
+            <div class="grid">
+                <input type="radio" id="non-urgent" name="status" value="non-urgent">
+                <label for="non-urgent">Non-urgent Check-up</label>
+            </div>
+            <div class="grid">
+                <input type="radio" id="urgent" name="status" value="urgent">
+                <label for="urgent">Urgent Check-up</label>
+            </div>
+            <div class="grid">
+                <input type="radio" id="surgical" name="status" value="surgical">
+                <label for="surgical">Surgical Appointment</label>
+            </div>
+
+            <div class="fieldname">Upload Previous Health Record</div>
+            <input type="file" name="record" id="record">
+            <div class="fieldname">Appointent details</div>
+            <textarea name="appt-details" id="appt-details"></textarea>
+            <div class="btn">
+                <button type="submit">BOOK APPOINTMENT<i class="fas fa-arrow-right"></i></button>
+            </div>
+        </form>
+    </div>
+    <footer class="copyright">
+        <div class="footer-content">
+            All Rights Reserved &copy; tvastra 2018
+        </div>
+    </footer>
+    <script src="function.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+.display-flex{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #abcadd;
+    position: relative;
+}
+
+.failure-message{
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    color: red;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: black;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.failure-message h3, .failure-message p{
+    margin: 0.2rem 0;
+    text-align: left;
+}
+.contact-form{
+    width: 85%;
+    max-width: 45rem;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+}
+
+.contact-form form{
+    padding:1rem;
+}
+
+.contact-form h3{
+    padding: 1.5rem 0;
+    color: #0568aa;
+    margin:0;
+}
+
+
+.input-box{
+    outline: 1px solid #e7e4e4;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input, .input-box select{
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: 'nexa-light';
+    letter-spacing: 0.06rem;
+    width: 100%;
+    border: none;
+}
+
+.mobile{
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.mobile i{
+    font-size: 1rem;
+    margin: auto;
+    color: #0568aa;
+    cursor: pointer;
+}
+
+
+.contact-form button{
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-form button i{
+    color: white;
+    float: right;
+}
+.signup-option{
+    font-family: 'nexa-bold';
+    color: gray;
+    padding-bottom: 1rem;
+    letter-spacing: -0.5px;
+    font-size: 0.8rem;
+}
+
+.signup-option a{
+    color: #0568aa;
+    text-decoration: underline;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.options a{
+    text-decoration: none;
+    font-family: 'nexa-bold';
+    color: #0568aa;
+}
+
+.copyright{
+    font-family: 'nexa-bold';
+    font-size: 0.6rem;
+    color: #696666;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+@media only screen and (min-width: 768px){
+    .display-flex{
+        height: 62rem;
+    }
+
+    .failure-message{
+        top: 5rem;
+        right: 2rem;
+    }
+    .contact-form{
+        margin: auto;
+    }
+
+    .contact-form form{
+        padding:2.5rem;
+    }
+
+    .contact-form h3{
+        padding: 2.5rem 0;
+    }
+
+    .input-box{
+        margin-bottom: 0.8rem;
+    }
+
+    .input-box input, .input-box select{
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .mobile i{
+        font-size: 1.5rem;
+    }
+
+    .options{
+        font-size: 1.2rem;
+    }
+    .contact-form button{
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        padding: 1.5rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .btn i{
+        color:white;
+        float:right;
+    }
+    
+
+    .signup-option{
+        padding-bottom: 2.5rem;
+        letter-spacing: -0.5px;
+        font-size:1rem;
+    }
+
+    .copyright{
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+    }
+}

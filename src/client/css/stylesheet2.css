@@ -1,0 +1,413 @@
+@import url(theme.css);
+@font-face{
+    font-family: 'nexa-light';
+    src:url('Nexa-Light.otf');
+}
+@font-face{
+    font-family: 'nexa-bold';
+    src:url('Nexa-Bold.otf');
+}
+
+.hero-section-2{
+    position: relative;
+    font-weight: normal;
+    background-image: linear-gradient(to bottom, rgba(168,197,236,0.85), rgba(168,197,236,0.85)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:2rem;
+}
+.hero-section-2 h3{
+    font-family: 'nexa-light';
+}
+
+.hero-section-2 a{
+    color: black;
+    text-decoration: underline;
+    font-family: 'nexa-bold';
+}
+
+.doc-header h3{
+    font-family: 'nexa-light';
+}
+.doc-details button{
+    letter-spacing: 0;
+}
+.doc-div-style{
+    margin: 1rem;
+    border: 1px solid lightgray;
+    padding-bottom: 0;
+}
+
+.doc-image{
+    width:100%;
+    height: 25rem;
+    margin-top: 0.5rem;
+}
+
+.doc-image img{
+    width:100%;
+    height:100%;
+}
+
+.doctors-grid{
+    margin-bottom: 5rem;
+}
+
+.doc-div-style i{
+    color: #4293c5;
+    margin: auto;
+    font-size: 0.8rem;
+}
+.doc-div-style .certificate{
+    height:1rem;
+    width:1rem;
+    margin:auto;
+}
+
+.details-grid p{
+    padding-left: 0;
+    margin:auto 0;
+    font-size:inherit;
+    text-align: left;
+}
+
+.details-grid{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 2.5rem repeat(5,1.7rem);
+}
+
+
+
+.name{
+    grid-column: 1/3;
+    margin: auto 0;
+}
+
+.doc-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    height: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.grid i{
+    margin:auto;
+    color: #4293c5;
+}
+
+.grid i:last-child{
+    color:#7a7575;
+}
+#sort-by{
+    background-color: lightgray;
+    border: none;
+    color: #504d4d;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+    font-family: 'nexa-bold';
+    
+}
+
+.doc-header h4{
+    font-family:'nexa-light';
+}
+
+.doc-header h3{
+    margin: 0;
+}
+.filters{
+    text-align: left;
+    margin: 1rem;
+    line-height: 1.6rem;
+    display: none;
+}
+
+#show{
+    color: #4293c5;
+    font-family: 'nexa-bold';
+}
+
+/*HOSPITAL OVERRIDING STYLES*/
+.hospital-grid{
+    margin-bottom: 1rem;
+}
+
+.hospital-details-grid p{
+    margin-right: 1rem;
+}
+
+.hospital-details-grid{
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: repeat(6,auto);
+    row-gap: 0.6rem;
+}
+
+.hospital-details-grid .name{
+    font-size:1.2rem;
+}
+.hospital-services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    grid-column: 1/3;
+}
+.service{
+    border: 1px solid #7a7575;
+    background-color:white;
+    width:auto;
+    color: #000000;
+    border-radius: 30px;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+    margin:0.1rem;
+}
+
+
+@media only screen and (min-width: 768px){
+    .doc-image{
+        margin-top: 0;
+    }
+
+    #filter-by{
+        background-color: lightgray;
+        font-family: 'nexa-bold';
+        padding:0.5rem;
+        margin-bottom: 1rem;
+    }
+    .filter{
+        display:none;
+    }
+    
+    .specification{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .details-grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 0.5rem;
+        margin-bottom: 3rem;
+        grid-column:1/2 ;
+        grid-row: 1/7;
+    }
+
+
+    .details-grid .name{
+        font-size: 1.3rem;
+    }
+
+    .details-grid .name{
+        grid-column: 1/5;
+    }
+
+    .doc-div-style{
+        display:grid;
+        grid-template-columns: 5fr 3.5fr;
+        grid-template-rows: repeat(8, auto) 2rem 1.5rem;
+        width: auto;
+        column-gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .doc-div-style i{
+        margin: auto 1rem auto 2rem;
+    }
+
+    .doc-div-style .certificate{
+        margin: auto 1rem auto auto;
+    }
+    
+    .doc-image{
+        width:100%;
+        height:100%;
+        grid-column: 2/3;
+        grid-row: 1/11;
+    }
+
+    .doctors-grid button{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        margin:auto;
+        margin-left: 2rem;
+        padding: 0.5rem;
+        width:11rem;
+    }
+
+    .filters{
+        display: block;
+        grid-column: 1/2;
+        grid-row: 1/7;
+    }
+    
+    .filters h4{
+        font-family: 'nexa-light';
+    }
+    .filter-flex{
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .doctors-grid{
+        grid-column: 2/3;
+        grid-row: 1/7;
+    }
+   
+    .grid-container{
+        display:grid;
+        grid-template-columns: 2.5fr 8fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    
+    /*HOSPITAL STYLES*/
+
+    .hospital-details-grid{
+        grid-template-columns: 1.5fr 4fr 1.5fr 4fr;
+        row-gap: 0.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .hospital-div-style{
+        grid-template-columns: 8fr 3fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+        margin-top:1rem;
+    }
+
+    .hospital-div-style button{
+        margin-bottom: 1rem;
+    }
+    .hospital-filters{
+        display: none;
+    }
+
+    .hospital-grid{
+        grid-column: 1/3;
+    }
+
+    .hospital-services{
+        display: flex;
+        grid-column: 1/5;
+        margin-left: 1.5rem;
+    }
+
+    .service{
+        
+        width:auto;
+        margin:0.1rem;
+    }
+    .selected-filters{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .desktop-view{
+        padding: 2rem 5rem;
+    }
+    .filters{
+        display:block;
+    }
+
+    .filter-flex{
+        grid-template-columns: 1fr 10fr;
+        margin: 0.5rem 0;
+    }
+
+    .specification{
+        margin-left: 2rem;
+    }
+    
+    .hero-section-2{
+        position: relative;
+        font-weight: normal;
+        background-image: linear-gradient(to bottom, rgba(168,197,236,0.85), rgba(168,197,236,0.85)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 5.5rem 5rem;
+    }
+    .hero-section-2 h3{
+        font-family: 'nexa-light';
+    }
+
+    .hero-section-2 a{
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .grid-container{
+        grid-template-columns: 3fr 8fr;
+    }
+
+    .details-grid{
+        grid-template-columns: 2fr 5fr 2fr 5fr ;
+    }
+    .doc-div-style{
+        grid-template-columns: 6fr 3fr;
+        grid-template-rows: repeat(8,1.6rem) 2rem 1.6rem;
+        height:auto;
+        column-gap:5rem;
+    }
+
+    .doc-div-style i, .doc-div-style .certificate{
+        margin: auto;
+    }
+    
+    .doctors-grid{
+        grid-column: 2/3;
+    }
+    
+
+   .details-grid p{
+        font-size: inherit;
+    }
+
+  
+
+    /*HOSPITAL STYLE*/
+
+    .hospital-div-style{
+        grid-template-rows: auto;
+        column-gap: 0;
+    }
+
+    .hospital-div-style button{
+        width: 10rem;
+        height: 2.5rem;
+    }
+    .hospital-services{
+        margin-left: 5rem;
+    }
+    .service{
+        width:auto;
+        margin:0.1rem;    
+    }
+
+    .filter{
+        display:flex;
+        border: 1px solid #504d4d;
+        border-radius: 25px;
+        padding:0.2rem 0.5rem;
+        font-family: 'nexa-light';
+        font-size:0.8rem;
+        margin:0.1rem;
+    }
+
+    .selected-filters .filter i{
+        padding:0.3rem;
+        color: #4293c5;
+    }
+}

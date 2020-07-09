@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="tagify.css">
+    <link rel="stylesheet" href="doc_signup.css">
+    <title>Doctor sign up</title>
+</head>
+<body>
+    <div class="display-flex">
+        <%- include header.ejs %>
+        <div class=" outer-container">
+            <div class="container">
+                <div class="greeting">
+                    Congratulations Shreya Ghosh
+                </div>
+                <p>You're one step away from being part of one of the best medical portal</p>
+                <i class="fas fa-user-md" id="doc-icon"></i>
+                <hr>
+                <form class="fields" method="POST" action="/doc_post">
+                    <textarea name="bio" id="bio" placeholder="Write about yourself"></textarea>
+                    <input type="text" name="speciality" id="speciality" placeholder="Speciality">
+                    <input type="text" name="education" id="education" placeholder="Education">
+                    <input type="text" name="treatment" id="treatment" placeholder="Treatment List">
+                    <input type="text" name="loc" id="loc" placeholder="Location">
+                    <input type="text" name="hospital" id="hospital" placeholder="Hospital">
+                    <input type="text" name="achievement" id="achievement" placeholder="Achievement">
+                    <input type="text" name="awards" id="awards" placeholder="Awards">
+                    <input type="text" name="experience" id="experience" placeholder="Experience">
+                    <input type="text" name="fees" id="fees" placeholder="Avg fees">
+                    <input type="file" name="file" id="file" placeholder="File">
+
+                    <div class="btn">
+                        <button type="submit">Add Fields</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="copyright">
+            <div class="footer-content">
+                All Rights Reserved &copy; tvastra 2018
+            </div>
+        </footer>
+    </div>
+    <script src="tagify.min.js"></script>
+    <script>
+        var speciality = document.querySelector('input[name=speciality]');
+        var tagify = new Tagify(speciality);
+        var education = document.querySelector('input[name=education]');
+        var tagify = new Tagify(education);
+        var treatment = document.querySelector('input[name=treatment]');
+        var tagify = new Tagify(treatment);
+        var loc = document.querySelector('input[name=loc]');
+        var tagify = new Tagify(loc);
+        var hospital = document.querySelector('input[name=hospital]');
+        var tagify = new Tagify(hospital);
+        var achievement = document.querySelector('input[name=achievement]');
+        var tagify = new Tagify(achievement);
+        var awards = document.querySelector('input[name=awards]');
+        var tagify = new Tagify(awards);
+        var experience = document.querySelector('input[name=experience]');
+        var tagify = new Tagify(experience);
+    </script>
+</body>
+</html>

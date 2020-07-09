@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="query.css">
+    <title>Submit query</title>
+</head>
+<body>
+    <div class="display-flex">
+        <%- include header.ejs %>
+    
+        <div class="contact-form">
+            <h3>Submit your query</h3>
+            <hr>
+            <form>
+                <div class="input-box mobile">
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="input-box mobile">
+                    <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter Phone Number">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <textarea name="query" id="query" placeholder="Write your query here"></textarea>
+                <div class="btn">
+                    <button type="submit">SUBMIT<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+        <footer class="copyright">
+            <div>
+                All Rights Reserved &copy; tvastra 2018
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
